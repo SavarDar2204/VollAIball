@@ -1,0 +1,206 @@
+{
+  "settings": {
+    "video": "C:\\Users\\SavarDar\\OneDrive - Electrolux\\Desktop\\Scout_Volley_CV&NLP\\Annotazioni\\ITA_POL_VNL2024_30fps.mp4",
+    "checkpoint": "C:\\Users\\SavarDar\\OneDrive - Electrolux\\Desktop\\Scout_Volley_CV&NLP\\runs\\volleyball_players\\yolov8m_players_20261117_083439\\weights\\best.pt",
+    "start": 1150,
+    "end": 1200,
+    "max_clip_seconds": 100000000.0,
+    "video_index": 1,
+    "checkpoint_index": 1,
+    "source_fps": 30.0,
+    "source_frame_count": 149166,
+    "stride": 1,
+    "imgsz": 640,
+    "conf": 0.1,
+    "display_conf": 0.4,
+    "iou": 0.5,
+    "max_det": 100,
+    "high": 0.4,
+    "new": 0.4,
+    "lost_seconds": 1.0,
+    "match": 0.8,
+    "roi": "floor",
+    "margin": 0.25,
+    "image_roi": null,
+    "calibration": "C:\\Users\\SavarDar\\OneDrive - Electrolux\\Desktop\\Scout_Volley_CV&NLP\\zone_campo_output\\calibrazione_ITA_POL_VNL2024_30fps.json",
+    "player_class_ids": [
+      0
+    ],
+    "sample_interval": 1.0,
+    "max_samples": 3,
+    "device": "0",
+    "expected_players": 12,
+    "expected_per_half": 6,
+    "max_outside_court_updates": 10,
+    "enable_side_cap": true,
+    "jersey_ocr": {
+      "engine": "easyocr_local",
+      "version": "1.7.2",
+      "model_dir": "C:\\Users\\SavarDar\\.EasyOCR\\model",
+      "device": "cuda:0",
+      "model_md5": {
+        "craft_mlt_25k.pth": "2f8227d2def4037cdb3b34389dcf9ec1",
+        "english_g2.pth": "5864788e1821be9e454ec108d61b887d"
+      },
+      "download_enabled": false,
+      "frame_batch_size": 12,
+      "recognition_batch_size": 4,
+      "allowlist": "0123456789",
+      "confidence_scale": "EasyOCR 0..1 converted to percent 0..100",
+      "number_range": [
+        0,
+        99
+      ],
+      "min_confidence": 25.0,
+      "window": 5,
+      "min_votes": 3,
+      "torso_fraction": [
+        0.12,
+        0.18,
+        0.88,
+        0.68
+      ]
+    }
+  },
+  "model_source": "fine_tuned_players",
+  "names": {
+    "0": "player",
+    "1": "refree"
+  },
+  "time_interval": "[start,end)",
+  "first_frame_expected": 34500,
+  "last_frame_expected": 35999,
+  "expected_processed_frames": 1500,
+  "expected_output_duration_seconds": 50.0,
+  "checkpoint_sha256": "63675f73ea9c546f0877b4d77c8e944d0fef6e40898f0270d459cb283996d6b2",
+  "calibration_path": "C:\\Users\\SavarDar\\OneDrive - Electrolux\\Desktop\\Scout_Volley_CV&NLP\\zone_campo_output\\calibrazione_ITA_POL_VNL2024_30fps.json",
+  "calibration_sha256": "c59e53c1d2a34abcc4c32622510547eb87decab56858af977190e79520e9f3a0",
+  "calibration_schema": 3,
+  "floor_h": [
+    [
+      0.013723366615838145,
+      0.012357241120325834,
+      -8.946476512530642
+    ],
+    [
+      -0.00021213727235087335,
+      0.11582606218006156,
+      -46.57791480663627
+    ],
+    [
+      -1.1785403205778066e-05,
+      0.0026442175583999052,
+      0.05562433702773213
+    ]
+  ],
+  "floor_reason": "",
+  "frame_size": [
+    1280,
+    720
+  ],
+  "fps": 30.0,
+  "dt_video_seconds": 0.03333333333333333,
+  "tracker_parameters": {
+    "track_high_thresh": 0.4,
+    "track_low_thresh": 0.1,
+    "new_track_thresh": 0.4,
+    "track_buffer": 30,
+    "match_thresh": 0.8,
+    "fuse_score": true
+  },
+  "max_frames_lost": 30,
+  "buffer_effective_seconds": 1.0,
+  "byte_tracker_api": "(args)",
+  "ultralytics": "8.4.212",
+  "torch": "2.14.1+cu130",
+  "torchvision": "0.29.1+cu130",
+  "status": "complete",
+  "outside_grace_seconds": 0.3333333333333333,
+  "outside_gate_version": "post_association_left_sideline_only_v3",
+  "outside_gate_scope": "floor_X_less_than_negative_margin_only",
+  "floor_left_border_world_x_m": 0.0,
+  "floor_reenable_when_x_ge_negative_margin": true,
+  "side_cap_enabled": true,
+  "side_cap_per_half": 6,
+  "side_cap_total": 12,
+  "side_definition": "A: Y<9, B: Y>=9, including beyond baselines; geometric sides, not jersey identities",
+  "side_cap_ranking": "previous frame admitted ID on same current side; descending current detection confidence; descending track age updates; ascending ID",
+  "output_policy": "main CSV/render only current-detection-associated admitted tracks; no unassigned detections or unobserved predictions; raw/excluded observations in diagnostic CSV; side changes logged, never assigned to other side to fill capacity",
+  "jersey_ocr": {
+    "engine": "EasyOCR",
+    "version": "1.7.2",
+    "device": "cuda:0",
+    "model_dir": "C:\\Users\\SavarDar\\.EasyOCR\\model",
+    "model_md5": {
+      "craft_mlt_25k.pth": "2f8227d2def4037cdb3b34389dcf9ec1",
+      "english_g2.pth": "5864788e1821be9e454ec108d61b887d"
+    },
+    "download_enabled": false,
+    "language": "en",
+    "allowlist": "0123456789",
+    "frame_batch_size": 12,
+    "recognition_batch_size": 4,
+    "confidence_scale": "EasyOCR 0..1 converted to percent 0..100",
+    "number_range": [
+      0,
+      99
+    ],
+    "min_confidence": 25.0,
+    "consensus_window_attempts": 5,
+    "min_votes": 3,
+    "torso_fraction": [
+      0.12,
+      0.18,
+      0.88,
+      0.68
+    ],
+    "save_sample_crops_max": 24
+  },
+  "policy": "EasyOCR readtext_batched, one ordered result group per valid torso crop/track ID in each frame; white padding preserves crop pixels and common batch dimensions; local Reader reused; no runtime download; per-track multi-read consensus and persistence; no OCR on predictions; no number transfer/re-ID; main CSV/render/count only admitted tracks; audit all YOLO detections; no OCR accuracy without GT",
+  "processed_frames": 1500,
+  "observations": 14144,
+  "first_frame_read": 34500,
+  "last_frame_read": 35999,
+  "output_video_fps": 30.0,
+  "output_video_frames": 1500,
+  "output_duration_seconds": 50.0,
+  "ocr_crop_attempts_total": 14144,
+  "ocr_batches_total": 1500,
+  "ocr_seconds_total": 51.799561199892196,
+  "jersey_crop_samples": [
+    "jersey_crops\\frame_034500_id_1.png",
+    "jersey_crops\\frame_034500_id_2.png",
+    "jersey_crops\\frame_034500_id_3.png",
+    "jersey_crops\\frame_034500_id_4.png",
+    "jersey_crops\\frame_034500_id_5.png",
+    "jersey_crops\\frame_034500_id_6.png",
+    "jersey_crops\\frame_034500_id_7.png",
+    "jersey_crops\\frame_034500_id_8.png",
+    "jersey_crops\\frame_034500_id_10.png",
+    "jersey_crops\\frame_034501_id_1.png",
+    "jersey_crops\\frame_034501_id_2.png",
+    "jersey_crops\\frame_034501_id_3.png",
+    "jersey_crops\\frame_034501_id_4.png",
+    "jersey_crops\\frame_034501_id_5.png",
+    "jersey_crops\\frame_034501_id_7.png",
+    "jersey_crops\\frame_034501_id_6.png",
+    "jersey_crops\\frame_034501_id_8.png",
+    "jersey_crops\\frame_034501_id_10.png",
+    "jersey_crops\\frame_034502_id_1.png",
+    "jersey_crops\\frame_034502_id_2.png",
+    "jersey_crops\\frame_034502_id_3.png",
+    "jersey_crops\\frame_034502_id_4.png",
+    "jersey_crops\\frame_034502_id_5.png",
+    "jersey_crops\\frame_034502_id_7.png"
+  ],
+  "annotated_video": "C:\\Users\\SavarDar\\OneDrive - Electrolux\\Desktop\\Scout_Volley_CV&NLP\\runs\\player_tracking_jersey\\ITA_POL_VNL2024_30fps_20261119_084442_3ee96e\\tracking_giocatori.mp4",
+  "sample_pngs": [
+    "C:\\Users\\SavarDar\\OneDrive - Electrolux\\Desktop\\Scout_Volley_CV&NLP\\runs\\player_tracking_jersey\\ITA_POL_VNL2024_30fps_20261119_084442_3ee96e\\giocatori_frame_034500.png",
+    "C:\\Users\\SavarDar\\OneDrive - Electrolux\\Desktop\\Scout_Volley_CV&NLP\\runs\\player_tracking_jersey\\ITA_POL_VNL2024_30fps_20261119_084442_3ee96e\\giocatori_frame_034530.png",
+    "C:\\Users\\SavarDar\\OneDrive - Electrolux\\Desktop\\Scout_Volley_CV&NLP\\runs\\player_tracking_jersey\\ITA_POL_VNL2024_30fps_20261119_084442_3ee96e\\giocatori_frame_034560.png"
+  ],
+  "observed_active_ids_range": [
+    3,
+    12
+  ]
+}

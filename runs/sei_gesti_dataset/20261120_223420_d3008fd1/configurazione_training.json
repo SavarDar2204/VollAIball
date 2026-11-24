@@ -1,0 +1,21 @@
+{
+  "data": "C:\\Users\\SavarDar\\OneDrive - Electrolux\\Desktop\\Scout_Volley_CV&NLP\\runs\\sei_gesti_dataset\\20261120_223420_d3008fd1\\dataset_6classi\\data.yaml",
+  "epochs": 100,
+  "patience": 20,
+  "imgsz": 640,
+  "batch": 8,
+  "device": 0,
+  "workers": 0,
+  "seed": 42,
+  "project": "C:\\Users\\SavarDar\\OneDrive - Electrolux\\Desktop\\Scout_Volley_CV&NLP\\runs\\sei_gesti_dataset\\20261120_223420_d3008fd1",
+  "name": "training",
+  "exist_ok": false,
+  "pretrained": true,
+  "resume": false,
+  "single_cls": false,
+  "val": true,
+  "save": true,
+  "plots": true,
+  "cache": false,
+  "amp": false
+}

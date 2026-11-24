@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 8
+names: ['Attack', 'Block', 'Dig', 'Player', 'Receive', 'Serve', 'Set', 'ball']
+
+roboflow:
+  workspace: savaresi-dario-gmail-com
+  project: volleyball-actions-cptry-qry1z
+  version: 1
+  license: CC BY 4.0
+  url: https://app.roboflow.com/savaresi-dario-gmail-com/volleyball-actions-cptry-qry1z/1

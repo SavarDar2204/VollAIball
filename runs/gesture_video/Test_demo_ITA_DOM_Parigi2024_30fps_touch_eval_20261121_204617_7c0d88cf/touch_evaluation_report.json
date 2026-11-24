@@ -1,0 +1,363 @@
+{
+  "status": "evaluated",
+  "evaluation_scope": "single configured video clip; not cross-validation",
+  "ground_truth_role": "evaluation only; never supplied to prediction or contextual priors",
+  "matching_policy": "maximum pairs, then contextual wall matches, then minimum absolute time difference; chronological order preserved",
+  "matching_class_bias_warning": "Wall labels are used to select pairs; classification accuracy can be inflated. Compare the class-blind temporal baseline.",
+  "class_blind_temporal_baseline": {
+    "raw": {
+      "n_temporally_matched": 916,
+      "accuracy_on_temporal_matches": 0.4497816593886463,
+      "n_class_correct": 412,
+      "unchanged_context_fraction_on_matches": 1.0,
+      "accuracy_when_context_unchanged": 0.4497816593886463
+    },
+    "contextual": {
+      "n_temporally_matched": 916,
+      "accuracy_on_temporal_matches": 0.4497816593886463,
+      "n_class_correct": 412,
+      "unchanged_context_fraction_on_matches": 1.0,
+      "accuracy_when_context_unchanged": 0.4497816593886463
+    }
+  },
+  "touch_csv": "C:\\Users\\SavarDar\\OneDrive - Electrolux\\Desktop\\Scout_Volley_CV&NLP\\Annotazioni\\Test_demo_ITA_DOM_Parigi2024_30fps_FP_tocchi.csv",
+  "touch_csv_sha256": "a4dfc561673ea28f7d88c6a76e4575967b6028afa4355db619022202d1461c91",
+  "touch_csv_rows_for_video": 942,
+  "video": "C:\\Users\\SavarDar\\OneDrive - Electrolux\\Desktop\\Scout_Volley_CV&NLP\\Annotazioni\\Test_demo_ITA_DOM_Parigi2024_30fps.mp4",
+  "video_basename_match": "ITA_DOM_Parigi2024_30fps.mp4",
+  "video_basename_actual": "Test_demo_ITA_DOM_Parigi2024_30fps.mp4",
+  "video_basename_alias_confirmed_by_user": true,
+  "video_fps": 30.0,
+  "interval_seconds_half_open": [
+    680.0,
+    7350.0
+  ],
+  "interval_frame_half_open": [
+    20400,
+    220500
+  ],
+  "frame_sampling_stride": 1,
+  "match_tolerance_seconds": 0.5,
+  "match_tolerance_seconds_by_ground_truth_class": {
+    "battuta": 1.0,
+    "ricezione": 0.5,
+    "alzata": 0.5,
+    "attacco": 0.5,
+    "muro": 0.5,
+    "difesa": 0.5
+  },
+  "annotation_frame_time_alignment_tolerance_seconds": 0.017176666666666666,
+  "annotation_max_abs_frame_time_error_seconds": 0.017000000000280124,
+  "annotation_rows_in_interval": 942,
+  "annotation_rows_annotation_time_boundary_disagreement": 0,
+  "annotation_rows_frame_time_misaligned_excluded": 0,
+  "annotation_rows_doubtful_excluded": 12,
+  "annotation_rows_unknown_class_excluded": 0,
+  "annotation_rows_eligible": 930,
+  "annotation_rows_with_unknown_camera_half": 645,
+  "ground_truth_team_side_by_set": {
+    "3": {
+      "DOM": "far",
+      "ITA": "near"
+    }
+  },
+  "camera_half_mapping": {
+    "method": "scout_serve_team_plus_unique_stable_pre_serve_baseline_track",
+    "evaluation_only": true,
+    "gesture_detector_or_associated_gesture_player_used_for_mapping": false,
+    "lookback_seconds": 10.0,
+    "minimum_anchor_frames": 5,
+    "minimum_anchor_duration_seconds": 0.15,
+    "maximum_projected_foot_y_range_m": 0.5,
+    "maximum_age_of_last_track_row_seconds": 1.0,
+    "minimum_repeated_serve_anchors_per_team_set": 2,
+    "player_csv": "C:\\Users\\SavarDar\\OneDrive - Electrolux\\Desktop\\Scout_Volley_CV&NLP\\runs\\player_tracking_jersey\\Test_demo_ITA_DOM_Parigi2024_30fps_20261119_135930_a08032\\osservazioni.csv",
+    "player_csv_sha256": "c7fbfc6971b986813ddbc73ef32125c23300145c3d819ea91f8f1520a23eb913",
+    "player_csv_frame_timestamp_max_error_frames": 1.4551915228366852e-11,
+    "calibration": {
+      "calibration_path": "C:\\Users\\SavarDar\\OneDrive - Electrolux\\Desktop\\Scout_Volley_CV&NLP\\zone_campo_output\\calibrazione_Test_demo_ITA_DOM_Parigi2024_30fps.json",
+      "calibration_sha256": "2a241619ec96ab0f9019e32b7c2bc86c095946ecb4c3e446ab141abe56921a2b",
+      "confirmed_by_user": true,
+      "far_baseline_world_y_m": 1.097500891971297e-06,
+      "near_baseline_world_y_m": 18.000000006206314,
+      "track_side_definition": "A: Y<9, B: Y>=9, including beyond baselines; geometric sides, not jersey identities"
+    },
+    "track_side_to_camera_half": {
+      "A_y_lt9": "far",
+      "B_y_ge9": "near"
+    },
+    "mapping_by_set_team": {
+      "3": {
+        "DOM": "far",
+        "ITA": "near"
+      }
+    },
+    "per_set": {
+      "1": {
+        "teams": [
+          "DOM",
+          "ITA"
+        ],
+        "anchors_by_team": {
+          "DOM": {
+            "count": 0,
+            "side_counts": {}
+          },
+          "ITA": {
+            "count": 4,
+            "side_counts": {
+              "A_y_lt9": 2,
+              "B_y_ge9": 2
+            }
+          }
+        },
+        "status": "unknown_conflicting_serve_anchors",
+        "mapping": {}
+      },
+      "2": {
+        "teams": [
+          "DOM",
+          "ITA"
+        ],
+        "anchors_by_team": {
+          "DOM": {
+            "count": 2,
+            "side_counts": {
+              "B_y_ge9": 1,
+              "A_y_lt9": 1
+            }
+          }
+        },
+        "status": "unknown_conflicting_serve_anchors",
+        "mapping": {}
+      },
+      "3": {
+        "teams": [
+          "DOM",
+          "ITA"
+        ],
+        "anchors_by_team": {
+          "DOM": {
+            "count": 2,
+            "side_counts": {
+              "A_y_lt9": 2
+            }
+          },
+          "ITA": {
+            "count": 0,
+            "side_counts": {}
+          }
+        },
+        "status": "derived_from_repeated_stable_serve_anchors",
+        "mapping": {
+          "DOM": "A_y_lt9",
+          "ITA": "B_y_ge9"
+        }
+      }
+    },
+    "n_non_doubtful_aligned_serve_rows": 138,
+    "n_unique_stable_baseline_anchors": 9,
+    "n_unresolved_serve_anchors": 129
+  },
+  "camera_half_mapping_unknown_eligible_touches": 645,
+  "prediction_track_side_to_camera_half": {
+    "A_y_lt9": "far",
+    "B_y_ge9": "near"
+  },
+  "annotation_quality_values_kept_not_used_as_labels": [
+    "negativo",
+    "neutro",
+    "positivo"
+  ],
+  "n_all_gesture_episodes": 10852,
+  "n_contact_candidate_events": 10852,
+  "n_wall_predictions": 1637,
+  "n_wall_predictions_legacy_excluded": 1621,
+  "n_wall_legacy_excluded_matched_correct": 82,
+  "n_wall_legacy_excluded_matched_error": 162,
+  "n_wall_legacy_excluded_unmatched": 1377,
+  "n_ball_warning_far_observed": 1221,
+  "n_ball_warning_only_kalman": 487,
+  "n_ball_warning_no_evidence": 9081,
+  "n_invalid_episode_detections_excluded": 0,
+  "n_temporal_matches": 916,
+  "n_missed_annotated_touches": 14,
+  "n_unmatched_contact_candidates": 9936,
+  "metrics": [
+    {
+      "metric": "contact_candidate_detection",
+      "description": "one-to-one temporal event match, regardless of gesture label",
+      "tp": 916,
+      "fp": 9936,
+      "fn": 14,
+      "precision": 0.08440840398083303,
+      "recall": 0.9849462365591398,
+      "f1": 0.15549142760142592,
+      "n_ground_truth_touches": 930,
+      "n_contact_candidate_events": 10852,
+      "n_temporally_matched": 916
+    },
+    {
+      "n_temporally_matched": 916,
+      "accuracy_on_temporal_matches": 0.47925764192139736,
+      "n_class_correct": 439,
+      "unchanged_context_fraction_on_matches": 1.0,
+      "accuracy_when_context_unchanged": 0.47925764192139736,
+      "metric": "classification_raw_on_temporal_matches",
+      "description": "classification only on temporally matched pairs; same pairs for raw/contextual",
+      "matching_coverage_of_eligible_touches": 0.9849462365591398,
+      "n_eligible_touches": 930
+    },
+    {
+      "metric": "joint_time_and_class_raw",
+      "description": "only a temporal match with correct label is TP; wrong-class match is both FP and FN",
+      "tp": 439,
+      "fp": 10413,
+      "fn": 491,
+      "precision": 0.040453372650202726,
+      "recall": 0.4720430107526882,
+      "f1": 0.07452045493125105,
+      "n_ground_truth_touches": 930,
+      "n_contact_candidate_events": 10852
+    },
+    {
+      "n_temporally_matched": 916,
+      "accuracy_on_temporal_matches": 0.47925764192139736,
+      "n_class_correct": 439,
+      "unchanged_context_fraction_on_matches": 1.0,
+      "accuracy_when_context_unchanged": 0.47925764192139736,
+      "metric": "classification_contextual_on_temporal_matches",
+      "description": "classification only on temporally matched pairs; same pairs for raw/contextual",
+      "matching_coverage_of_eligible_touches": 0.9849462365591398,
+      "n_eligible_touches": 930,
+      "changed_context_fraction_all_candidate_events": 0.00018429782528566163,
+      "changed_context_fraction_on_matched_events": 0.0,
+      "unchanged_context_fraction_all_candidate_events": 0.9998157021747144
+    },
+    {
+      "metric": "joint_time_and_class_contextual",
+      "description": "only a temporal match with correct label is TP; wrong-class match is both FP and FN",
+      "tp": 439,
+      "fp": 10413,
+      "fn": 491,
+      "precision": 0.040453372650202726,
+      "recall": 0.4720430107526882,
+      "f1": 0.07452045493125105,
+      "n_ground_truth_touches": 930,
+      "n_contact_candidate_events": 10852
+    }
+  ],
+  "confusion_matrices": {
+    "raw": "confusion_raw.csv",
+    "contextual": "confusion_contextual.csv",
+    "raw_near": "confusion_raw_near.csv",
+    "contextual_near": "confusion_contextual_near.csv",
+    "raw_far": "confusion_raw_far.csv",
+    "contextual_far": "confusion_contextual_far.csv"
+  },
+  "outputs": {
+    "matches": "event_matches.csv",
+    "candidate_events": "candidate_events.csv",
+    "metrics": "metrics.csv",
+    "metrics_by_camera_half": "metrics_by_camera_half.csv",
+    "per_class_metrics": "per_class_metrics.csv",
+    "per_class_metrics_by_camera_half": "per_class_metrics_by_camera_half.csv",
+    "serve_side_anchors": "serve_side_anchors.csv",
+    "rally_window_report": "rally_window_report.json",
+    "rally_windows": "rally_windows.csv",
+    "rally_window_metrics": "rally_window_metrics.csv",
+    "rally_window_matches": "rally_window_matches.csv",
+    "rally_confusion_raw": "rally_confusion_raw.csv",
+    "rally_confusion_contextual": "rally_confusion_contextual.csv",
+    "rally_per_class_metrics": "rally_per_class_metrics.csv"
+  },
+  "rally_window_evaluation": {
+    "status": "evaluated",
+    "ground_truth_role": "evaluation only; not used for inference or prediction filtering",
+    "window_definition": "first/last aligned non-doubtful known-label touch +/- margin; half-open and clipped to clip interval",
+    "clip_interval_seconds_half_open": [
+      680.0,
+      7350.0
+    ],
+    "rally_window_margin_seconds_each_side": 0.5,
+    "match_tolerance_seconds": 0.5,
+    "match_tolerance_seconds_by_ground_truth_class": {
+      "battuta": 1.0,
+      "ricezione": 0.5,
+      "alzata": 0.5,
+      "attacco": 0.5,
+      "muro": 0.5,
+      "difesa": 0.5
+    },
+    "n_rallies_with_intersecting_windows": 138,
+    "n_incomplete_at_clip_border": 0,
+    "clip_border_is_true_rally_boundary": false,
+    "n_ground_truth_touches_in_rally_report": 930,
+    "n_contact_candidates_in_windows_unique": 3843,
+    "n_contact_candidates_outside_rally_windows_excluded_from_this_report": 7009,
+    "n_candidate_window_hits_resolved_by_overlap": 0,
+    "n_candidate_assignments_unique": 3843,
+    "candidate_assignments_have_duplicates": false,
+    "n_temporal_matches": 915,
+    "n_unmatched_candidates": 2928,
+    "n_missed_annotated_touches": 15,
+    "contact_candidate_detection": {
+      "tp": 915,
+      "fp": 2928,
+      "fn": 15,
+      "precision": 0.23809523809523808,
+      "recall": 0.9838709677419355,
+      "f1": 0.3834066624764299
+    },
+    "classification_raw_on_temporal_matches": {
+      "n_temporally_matched": 915,
+      "accuracy_on_temporal_matches": 0.47978142076502733,
+      "n_class_correct": 439,
+      "unchanged_context_fraction_on_matches": 1.0,
+      "accuracy_when_context_unchanged": 0.47978142076502733
+    },
+    "classification_contextual_on_temporal_matches": {
+      "n_temporally_matched": 915,
+      "accuracy_on_temporal_matches": 0.47978142076502733,
+      "n_class_correct": 439,
+      "unchanged_context_fraction_on_matches": 1.0,
+      "accuracy_when_context_unchanged": 0.47978142076502733
+    },
+    "joint_time_and_class_raw": {
+      "tp": 439,
+      "fp": 3404,
+      "fn": 491,
+      "precision": 0.11423367161072079,
+      "recall": 0.4720430107526882,
+      "f1": 0.18395139325371884
+    },
+    "joint_time_and_class_contextual": {
+      "tp": 439,
+      "fp": 3404,
+      "fn": 491,
+      "precision": 0.11423367161072079,
+      "recall": 0.4720430107526882,
+      "f1": 0.18395139325371884
+    },
+    "n_ground_truth_without_match_set_rally_key": 0,
+    "n_ground_truth_without_intersecting_rally_window": 0,
+    "limitations": [
+      "Rally IDs and touch times come from scout for evaluation only.",
+      "The first/last annotated touch plus margin is an evaluation window, not a proven real rally boundary.",
+      "Windows clipped at clip edges have incomplete context; clip edges are not rally starts or ends.",
+      "Predictions outside the union of rally windows are excluded only here; full-clip metrics remain unchanged.",
+      "A candidate in overlapping windows is assigned once to the nearest unpadded rally touch interval; ties use lexical video/set/rally key."
+    ]
+  },
+  "limits": [
+    "Event candidates are not proof of ball contact; a nearby observed ball is still unconfirmed.",
+    "Walls are included regardless of ball evidence; warning does not prove or disprove contact.",
+    "Scout touch annotations omit gestures without contact, including some blocks; this is not complete action recognition evaluation.",
+    "The touch CSV has team but no camera-half field; mapping uses repeated, stable pre-serve player-foot anchors and the confirmed calibration.",
+    "The player linked to a gesture prediction is never used as ground-truth side evidence.",
+    "Jumping or unstable/missing baseline tracks are not anchors; uncertain sets remain unassigned.",
+    "Near/far contact precision is null when unmatched candidate events have no independently mapped tracker side.",
+    "Potential overlap between the external training dataset and this match is unverified.",
+    "Results apply only to this clip and tolerance; no cross-validation or generalization estimate."
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "settings": {
+    "video": "C:\\Users\\SavarDar\\OneDrive - Electrolux\\Desktop\\Scout_Volley_CV&NLP\\Annotazioni\\ITA_POL_VNL2024_30fps.mp4",
+    "checkpoint": "C:\\Users\\SavarDar\\OneDrive - Electrolux\\Desktop\\Scout_Volley_CV&NLP\\runs\\volleyball_players\\yolov8m_players_20261117_083439\\weights\\best.pt",
+    "start": 360,
+    "end": 4970,
+    "stride": 1,
+    "imgsz": 640,
+    "conf": 0.1,
+    "display_conf": 0.4,
+    "iou": 0.5,
+    "max_det": 100,
+    "high": 0.4,
+    "new": 0.4,
+    "lost_seconds": 1.0,
+    "match": 0.8,
+    "roi": "floor",
+    "margin": 0.25,
+    "image_roi": null,
+    "calibration": "C:\\Users\\SavarDar\\OneDrive - Electrolux\\Desktop\\Scout_Volley_CV&NLP\\zone_campo_output\\calibrazione_ITA_POL_VNL2024_30fps.json",
+    "player_class_ids": [
+      0
+    ],
+    "sample_interval": 1.0,
+    "max_samples": 3,
+    "device": "0",
+    "expected_players": 12,
+    "expected_per_half": 6,
+    "max_outside_court_updates": 10,
+    "enable_side_cap": true
+  },
+  "model_source": "fine_tuned_players",
+  "names": {
+    "0": "player",
+    "1": "refree"
+  },
+  "checkpoint_sha256": "63675f73ea9c546f0877b4d77c8e944d0fef6e40898f0270d459cb283996d6b2",
+  "calibration_path": "C:\\Users\\SavarDar\\OneDrive - Electrolux\\Desktop\\Scout_Volley_CV&NLP\\zone_campo_output\\calibrazione_ITA_POL_VNL2024_30fps.json",
+  "calibration_sha256": "c59e53c1d2a34abcc4c32622510547eb87decab56858af977190e79520e9f3a0",
+  "calibration_schema": 3,
+  "floor_h": [
+    [
+      0.013723366615838145,
+      0.012357241120325834,
+      -8.946476512530642
+    ],
+    [
+      -0.00021213727235087335,
+      0.11582606218006156,
+      -46.57791480663627
+    ],
+    [
+      -1.1785403205778066e-05,
+      0.0026442175583999052,
+      0.05562433702773213
+    ]
+  ],
+  "floor_reason": "",
+  "frame_size": [
+    1280,
+    720
+  ],
+  "fps": 30.0,
+  "dt_video_seconds": 0.03333333333333333,
+  "tracker_parameters": {
+    "track_high_thresh": 0.4,
+    "track_low_thresh": 0.1,
+    "new_track_thresh": 0.4,
+    "track_buffer": 30,
+    "match_thresh": 0.8,
+    "fuse_score": true
+  },
+  "max_frames_lost": 30,
+  "buffer_effective_seconds": 1.0,
+  "byte_tracker_api": "(args)",
+  "ultralytics": "8.4.212",
+  "torch": "2.14.1+cu130",
+  "torchvision": "0.29.1+cu130",
+  "status": "complete",
+  "outside_grace_seconds": 0.3333333333333333,
+  "outside_gate_version": "post_association_left_sideline_only_v3",
+  "outside_gate_scope": "floor_X_less_than_negative_margin_only",
+  "floor_left_border_world_x_m": 0.0,
+  "floor_reenable_when_x_ge_negative_margin": true,
+  "side_cap_enabled": true,
+  "side_cap_per_half": 6,
+  "side_cap_total": 12,
+  "side_definition": "A: Y<9, B: Y>=9, including beyond baselines; geometric sides, not jersey identities",
+  "side_cap_ranking": "previous frame admitted ID on same current side; descending current detection confidence; descending track age updates; ascending ID",
+  "output_policy": "main CSV/render only current-detection-associated admitted tracks; no unassigned detections or unobserved predictions; raw/excluded observations in diagnostic CSV; side changes logged, never assigned to other side to fill capacity",
+  "policy": "associate all image-valid player detections first; floor gate only X < -margin, other sidelines/baselines unaffected, reentry resets and reenables; image ROI keeps polygon gate latched until ID timeout; none disables; main CSV/render/count exclude suppressed IDs, all raw detections in diagnostic CSV; not role classification; no accuracy without GT",
+  "processed_frames": 138300,
+  "observations": 1125184,
+  "annotated_video": "C:\\Users\\SavarDar\\OneDrive - Electrolux\\Desktop\\Scout_Volley_CV&NLP\\runs\\player_tracking\\ITA_POL_VNL2024_30fps_20261117_122249_a87973\\tracking_giocatori.mp4",
+  "sample_pngs": [
+    "C:\\Users\\SavarDar\\OneDrive - Electrolux\\Desktop\\Scout_Volley_CV&NLP\\runs\\player_tracking\\ITA_POL_VNL2024_30fps_20261117_122249_a87973\\giocatori_frame_010800.png",
+    "C:\\Users\\SavarDar\\OneDrive - Electrolux\\Desktop\\Scout_Volley_CV&NLP\\runs\\player_tracking\\ITA_POL_VNL2024_30fps_20261117_122249_a87973\\giocatori_frame_010830.png",
+    "C:\\Users\\SavarDar\\OneDrive - Electrolux\\Desktop\\Scout_Volley_CV&NLP\\runs\\player_tracking\\ITA_POL_VNL2024_30fps_20261117_122249_a87973\\giocatori_frame_010860.png"
+  ],
+  "observed_active_ids_range": [
+    0,
+    12
+  ]
+}

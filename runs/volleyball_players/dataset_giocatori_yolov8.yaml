@@ -1,0 +1,9 @@
+path: C:\Users\SavarDar\OneDrive - Electrolux\Desktop\Scout_Volley_CV&NLP\Tracking
+  Volleyball Players.v2i.yolov8
+train: train/images
+val: valid/images
+nc: 2
+names:
+  0: player
+  1: refree
+test: test/images

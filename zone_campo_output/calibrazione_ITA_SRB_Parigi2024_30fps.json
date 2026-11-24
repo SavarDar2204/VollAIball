@@ -1,0 +1,694 @@
+{
+  "schema_version": 3,
+  "confirmed_by_user": true,
+  "video": "C:\\Users\\SavarDar\\OneDrive - Electrolux\\Desktop\\Scout_Volley_CV&NLP\\Annotazioni\\ITA_SRB_Parigi2024_30fps.mp4",
+  "frame_seconds": 800.0,
+  "image_width_px": 1280,
+  "image_height_px": 720,
+  "corner_order": [
+    "alto-sinistra / fondo lontano",
+    "alto-destra / fondo lontano",
+    "basso-destra / fondo vicino",
+    "basso-sinistra / fondo vicino"
+  ],
+  "corners_image_px": [
+    [
+      317.3333333333333,
+      420.0
+    ],
+    [
+      1025.3333333333333,
+      421.3333333333333
+    ],
+    [
+      1233.3333333333333,
+      705.3333333333334
+    ],
+    [
+      73.33333333333333,
+      700.0
+    ]
+  ],
+  "net": {
+    "status": "selected",
+    "height_m": 2.24,
+    "bottom_height_m_nominal": 1.2400000000000002,
+    "band_height_m_nominal": 1.0,
+    "antenna_extension_above_top_m_nominal": 0.8,
+    "antenna_tip_height_m_nominal": 3.04,
+    "height_reference": "rete femminile 2.24m al centro; fascia nominale larga 1m; antenna 0.80m sopra il nastro",
+    "world_endpoints_xyz_m": [
+      [
+        0.0,
+        9.0,
+        2.24
+      ],
+      [
+        9.0,
+        9.0,
+        2.24
+      ]
+    ],
+    "image_endpoints_xy_px": [
+      [
+        220.0,
+        308.0
+      ],
+      [
+        1108.0,
+        306.6666666666667
+      ]
+    ],
+    "endpoint_order": [
+      "lato associato al corner x=0",
+      "lato associato al corner x=9"
+    ],
+    "correspondences": [
+      {
+        "code": "TOP-L",
+        "name": "nastro superiore - sinistra",
+        "world_xyz_m": [
+          0.0,
+          9.0,
+          2.24
+        ],
+        "image_xy_px": [
+          220.0,
+          308.0
+        ],
+        "required": true,
+        "nominal_z_tolerance_m": 0.02
+      },
+      {
+        "code": "TOP-C",
+        "name": "nastro superiore - centro esatto",
+        "world_xyz_m": [
+          4.5,
+          9.0,
+          2.24
+        ],
+        "image_xy_px": [
+          656.0,
+          310.6666666666667
+        ],
+        "required": true,
+        "nominal_z_tolerance_m": 0.0
+      },
+      {
+        "code": "TOP-R",
+        "name": "nastro superiore - destra",
+        "world_xyz_m": [
+          9.0,
+          9.0,
+          2.24
+        ],
+        "image_xy_px": [
+          1108.0,
+          306.6666666666667
+        ],
+        "required": true,
+        "nominal_z_tolerance_m": 0.02
+      },
+      {
+        "code": "BOT-L",
+        "name": "nastro inferiore - sinistra",
+        "world_xyz_m": [
+          0.0,
+          9.0,
+          1.2400000000000002
+        ],
+        "image_xy_px": [
+          221.33333333333334,
+          404.0
+        ],
+        "required": true,
+        "nominal_z_tolerance_m": 0.02
+      },
+      {
+        "code": "BOT-C",
+        "name": "nastro inferiore - centro esatto",
+        "world_xyz_m": [
+          4.5,
+          9.0,
+          1.2400000000000002
+        ],
+        "image_xy_px": [
+          656.0,
+          405.3333333333333
+        ],
+        "required": true,
+        "nominal_z_tolerance_m": 0.0
+      },
+      {
+        "code": "BOT-R",
+        "name": "nastro inferiore - destra",
+        "world_xyz_m": [
+          9.0,
+          9.0,
+          1.2400000000000002
+        ],
+        "image_xy_px": [
+          1105.3333333333333,
+          405.3333333333333
+        ],
+        "required": true,
+        "nominal_z_tolerance_m": 0.02
+      }
+    ],
+    "skipped_optional_points": [
+      "ANT-L",
+      "ANT-R"
+    ],
+    "assumption": "top/bottom tape visibili; estremi possono differire fino a circa 0.02m e sag non modellato"
+  },
+  "camera_3d": {
+    "status": "not_available",
+    "reason": "intrinseco al limite fisico; riproiezione oltre soglia; verifica click, quote nominali, sag e geometria",
+    "model": "pinhole_zero_skew_estimated_fx_fy_cx_cy_no_distortion",
+    "assumptions": [
+      "skew=0",
+      "fx/fy ratio in plausible range",
+      "principal point inside image",
+      "distortion ignored",
+      "rigid pose parametrized on SO(3)"
+    ],
+    "camera_matrix": [
+      [
+        8425.60644727937,
+        0.0,
+        4.957129114275367e-19
+      ],
+      [
+        0.0,
+        10239.999999999984,
+        1.134110563369174e-14
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "rotation_vector_world_to_camera": [
+      1.381621166924475,
+      0.1638225287092803,
+      -0.14684096470012062
+    ],
+    "translation_vector_world_to_camera_m": [
+      0.40322408362135964,
+      3.1544754212897343,
+      77.15257179983617
+    ],
+    "camera_center_world_m": [
+      15.160464238301339,
+      -74.9406550679834,
+      -10.802369288018745
+    ],
+    "fx_px": 8425.60644727937,
+    "fy_px": 10239.999999999984,
+    "cx_px": 4.957129114275367e-19,
+    "cy_px": 1.134110563369174e-14,
+    "focal_length_geometric_mean_px": 9288.606462766124,
+    "focal_length_px": 9288.606462766124,
+    "focal_length_std_from_fit_px": 720177.7663401244,
+    "intrinsic_std_px": {
+      "fx_px": 661019.6617579036,
+      "fy_px": 784556.4599745794,
+      "cx_px": 225922.85795754087,
+      "cy_px": 163773.59797312648
+    },
+    "intrinsic_bounds": {
+      "focal_px": [
+        384.0,
+        10240.0
+      ],
+      "principal_point_px": [
+        [
+          0.0,
+          1279.0
+        ],
+        [
+          0.0,
+          719.0
+        ]
+      ],
+      "fx_fy_ratio": [
+        0.75,
+        1.333
+      ]
+    },
+    "focal_at_bound": true,
+    "principal_point_at_bound": true,
+    "distortion_coefficients": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "reprojection_rms_px": 126.76539406540047,
+    "max_reprojection_error_px": 282.5258643520061,
+    "reprojection_error_by_point_px": [
+      273.3016253380257,
+      5.910445500337134,
+      69.05598045047962,
+      282.5258643520061,
+      1.1218356663379756,
+      4.499893348229261,
+      2.2207084090140814,
+      21.74096064893482,
+      20.732363258371592,
+      21.152014699722574
+    ],
+    "point_diagnostics": [
+      {
+        "code": "CORNER-1",
+        "name": "alto-sinistra / fondo lontano",
+        "world_xyz_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "nominal_z_tolerance_m": 0.0,
+        "image_observed_xy_px": [
+          317.3333333333333,
+          420.0
+        ],
+        "image_predicted_xy_px": [
+          44.03492144724147,
+          418.6746800587589
+        ],
+        "residual_dx_dy_px": [
+          -273.29841188609186,
+          -1.325319941241105
+        ],
+        "residual_norm_px": 273.3016253380257
+      },
+      {
+        "code": "CORNER-2",
+        "name": "alto-destra / fondo lontano",
+        "world_xyz_m": [
+          9.0,
+          0.0,
+          0.0
+        ],
+        "nominal_z_tolerance_m": 0.0,
+        "image_observed_xy_px": [
+          1025.3333333333333,
+          421.3333333333333
+        ],
+        "image_predicted_xy_px": [
+          1030.9586098464933,
+          419.5195995703612
+        ],
+        "residual_dx_dy_px": [
+          5.625276513160088,
+          -1.813733762972106
+        ],
+        "residual_norm_px": 5.910445500337134
+      },
+      {
+        "code": "CORNER-3",
+        "name": "basso-destra / fondo vicino",
+        "world_xyz_m": [
+          9.0,
+          18.0,
+          0.0
+        ],
+        "nominal_z_tolerance_m": 0.0,
+        "image_observed_xy_px": [
+          1233.3333333333333,
+          705.3333333333334
+        ],
+        "image_predicted_xy_px": [
+          1164.29818932718,
+          703.6370644788494
+        ],
+        "residual_dx_dy_px": [
+          -69.03514400615336,
+          -1.6962688544839466
+        ],
+        "residual_norm_px": 69.05598045047962
+      },
+      {
+        "code": "CORNER-4",
+        "name": "basso-sinistra / fondo vicino",
+        "world_xyz_m": [
+          0.0,
+          18.0,
+          0.0
+        ],
+        "nominal_z_tolerance_m": 0.0,
+        "image_observed_xy_px": [
+          73.33333333333333,
+          700.0
+        ],
+        "image_predicted_xy_px": [
+          355.8481272992747,
+          697.4989565717784
+        ],
+        "residual_dx_dy_px": [
+          282.5147939659414,
+          -2.5010434282215783
+        ],
+        "residual_norm_px": 282.5258643520061
+      },
+      {
+        "code": "TOP-L",
+        "name": "nastro superiore - sinistra",
+        "world_xyz_m": [
+          0.0,
+          9.0,
+          2.24
+        ],
+        "nominal_z_tolerance_m": 0.02,
+        "image_observed_xy_px": [
+          220.0,
+          308.0
+        ],
+        "image_predicted_xy_px": [
+          221.11908425771668,
+          307.92147811516094
+        ],
+        "residual_dx_dy_px": [
+          1.119084257716679,
+          -0.07852188483906275
+        ],
+        "residual_norm_px": 1.1218356663379756
+      },
+      {
+        "code": "TOP-C",
+        "name": "nastro superiore - centro esatto",
+        "world_xyz_m": [
+          4.5,
+          9.0,
+          2.24
+        ],
+        "nominal_z_tolerance_m": 0.0,
+        "image_observed_xy_px": [
+          656.0,
+          310.6666666666667
+        ],
+        "image_predicted_xy_px": [
+          658.7676475014879,
+          307.1185449871092
+        ],
+        "residual_dx_dy_px": [
+          2.767647501487886,
+          -3.5481216795574824
+        ],
+        "residual_norm_px": 4.499893348229261
+      },
+      {
+        "code": "TOP-R",
+        "name": "nastro superiore - destra",
+        "world_xyz_m": [
+          9.0,
+          9.0,
+          2.24
+        ],
+        "nominal_z_tolerance_m": 0.02,
+        "image_observed_xy_px": [
+          1108.0,
+          306.6666666666667
+        ],
+        "image_predicted_xy_px": [
+          1105.8100436347056,
+          306.29837743797214
+        ],
+        "residual_dx_dy_px": [
+          -2.1899563652943925,
+          -0.3682892286945503
+        ],
+        "residual_norm_px": 2.2207084090140814
+      },
+      {
+        "code": "BOT-L",
+        "name": "nastro inferiore - sinistra",
+        "world_xyz_m": [
+          0.0,
+          9.0,
+          1.2400000000000002
+        ],
+        "nominal_z_tolerance_m": 0.02,
+        "image_observed_xy_px": [
+          221.33333333333334,
+          404.0
+        ],
+        "image_predicted_xy_px": [
+          218.69912215103298,
+          425.5807854672988
+        ],
+        "residual_dx_dy_px": [
+          -2.634211182300362,
+          21.580785467298824
+        ],
+        "residual_norm_px": 21.74096064893482
+      },
+      {
+        "code": "BOT-C",
+        "name": "nastro inferiore - centro esatto",
+        "world_xyz_m": [
+          4.5,
+          9.0,
+          1.2400000000000002
+        ],
+        "nominal_z_tolerance_m": 0.0,
+        "image_observed_xy_px": [
+          656.0,
+          405.3333333333333
+        ],
+        "image_predicted_xy_px": [
+          657.2475499922363,
+          426.0281274925886
+        ],
+        "residual_dx_dy_px": [
+          1.2475499922362587,
+          20.69479415925531
+        ],
+        "residual_norm_px": 20.732363258371592
+      },
+      {
+        "code": "BOT-R",
+        "name": "nastro inferiore - destra",
+        "world_xyz_m": [
+          9.0,
+          9.0,
+          1.2400000000000002
+        ],
+        "nominal_z_tolerance_m": 0.02,
+        "image_observed_xy_px": [
+          1105.3333333333333,
+          405.3333333333333
+        ],
+        "image_predicted_xy_px": [
+          1105.2292483788826,
+          426.48509194058715
+        ],
+        "residual_dx_dy_px": [
+          -0.10408495445062727,
+          21.15175860725384
+        ],
+        "residual_norm_px": 21.152014699722574
+      }
+    ],
+    "jacobian_rank": 10,
+    "jacobian_condition": 20902.415566119933,
+    "object_point_rank": 4,
+    "object_point_singular_values": [
+      3.658527227789888,
+      0.9014905795662127,
+      0.679135611486297,
+      0.16420833103359284
+    ],
+    "fit_attempts": 15,
+    "robust_loss": "soft_l1",
+    "object_points_xyz_m": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        9.0,
+        0.0,
+        0.0
+      ],
+      [
+        9.0,
+        18.0,
+        0.0
+      ],
+      [
+        0.0,
+        18.0,
+        0.0
+      ],
+      [
+        0.0,
+        9.0,
+        2.24
+      ],
+      [
+        4.5,
+        9.0,
+        2.24
+      ],
+      [
+        9.0,
+        9.0,
+        2.24
+      ],
+      [
+        0.0,
+        9.0,
+        1.2400000000000002
+      ],
+      [
+        4.5,
+        9.0,
+        1.2400000000000002
+      ],
+      [
+        9.0,
+        9.0,
+        1.2400000000000002
+      ]
+    ],
+    "image_points_xy_px": [
+      [
+        317.3333333333333,
+        420.0
+      ],
+      [
+        1025.3333333333333,
+        421.3333333333333
+      ],
+      [
+        1233.3333333333333,
+        705.3333333333334
+      ],
+      [
+        73.33333333333333,
+        700.0
+      ],
+      [
+        220.0,
+        308.0
+      ],
+      [
+        656.0,
+        310.6666666666667
+      ],
+      [
+        1108.0,
+        306.6666666666667
+      ],
+      [
+        221.33333333333334,
+        404.0
+      ],
+      [
+        656.0,
+        405.3333333333333
+      ],
+      [
+        1105.3333333333333,
+        405.3333333333333
+      ]
+    ],
+    "net_height_model_warning": "quote nominali; estremi fino a circa 0.02m piu alti e possibile sag; residui rete alti non identificano da soli la causa",
+    "quality": "fit approssimato; verifica residui punto per punto, non metrologico"
+  },
+  "court_width_m": 9.0,
+  "court_length_m": 18.0,
+  "opponent_backcourt_extension_m": 5.0,
+  "x_edges_m": [
+    0.0,
+    3.0,
+    6.0,
+    9.0
+  ],
+  "y_edges_m": [
+    0.0,
+    4.5,
+    9.0,
+    13.5,
+    18.0
+  ],
+  "zone_id_map": {
+    "0": "background",
+    "1": "L P1",
+    "2": "L P6",
+    "3": "L P5",
+    "4": "L P2",
+    "5": "L P3",
+    "6": "L P4",
+    "7": "V P4",
+    "8": "V P3",
+    "9": "V P2",
+    "10": "V P5",
+    "11": "V P6",
+    "12": "V P1"
+  },
+  "zone_labels_by_image_row": [
+    [
+      "L P1",
+      "L P6",
+      "L P5"
+    ],
+    [
+      "L P2",
+      "L P3",
+      "L P4"
+    ],
+    [
+      "V P4",
+      "V P3",
+      "V P2"
+    ],
+    [
+      "V P5",
+      "V P6",
+      "V P1"
+    ]
+  ],
+  "H_world_to_image": [
+    [
+      97.07685686152101,
+      -18.866324908079175,
+      395.4870094436975
+    ],
+    [
+      -0.21151123989988604,
+      0.5603847900713569,
+      523.4386721901036
+    ],
+    [
+      -0.0009402225494160001,
+      -0.026894618140644283,
+      1.24628255283358
+    ]
+  ],
+  "H_image_to_world": [
+    [
+      0.010252727124957072,
+      0.0089345195719662,
+      -7.006030398841648
+    ],
+    [
+      -0.00015858200434121176,
+      0.08420640113218324,
+      -35.316365117859505
+    ],
+    [
+      4.312700015689421e-06,
+      0.0018239037648802583,
+      0.034978118066084155
+    ]
+  ],
+  "valid_projective_halfspace": "denominator >= 1e-4 after center normalization",
+  "background_polygons_image_px": [],
+  "peripheral_regions": "graphic projective extensions to image edges; not surveyed floor or physical ball positions",
+  "reuse_limit": "same fixed camera, framing and zoom only"
+}

@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['player', 'refree']
+
+roboflow:
+  workspace: savaresi-dario-gmail-com
+  project: tracking-volleyball-players-hnhab
+  version: 2
+  license: CC BY 4.0
+  url: https://app.roboflow.com/savaresi-dario-gmail-com/tracking-volleyball-players-hnhab/2

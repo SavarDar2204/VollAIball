@@ -1,0 +1,78 @@
+{
+  "status": "evaluated",
+  "ground_truth_role": "evaluation only; not used for inference or prediction filtering",
+  "window_definition": "first/last aligned non-doubtful known-label touch +/- margin; half-open and clipped to clip interval",
+  "clip_interval_seconds_half_open": [
+    1150.0,
+    1200.0
+  ],
+  "rally_window_margin_seconds_each_side": 0.5,
+  "match_tolerance_seconds": 0.5,
+  "match_tolerance_seconds_by_ground_truth_class": {
+    "battuta": 1.0,
+    "ricezione": 0.5,
+    "alzata": 0.5,
+    "attacco": 0.5,
+    "muro": 0.5,
+    "difesa": 0.5
+  },
+  "n_rallies_with_intersecting_windows": 2,
+  "n_incomplete_at_clip_border": 0,
+  "clip_border_is_true_rally_boundary": false,
+  "n_ground_truth_touches_in_rally_report": 16,
+  "n_contact_candidates_in_windows_unique": 63,
+  "n_contact_candidates_outside_rally_windows_excluded_from_this_report": 48,
+  "n_candidate_window_hits_resolved_by_overlap": 0,
+  "n_candidate_assignments_unique": 63,
+  "candidate_assignments_have_duplicates": false,
+  "n_temporal_matches": 15,
+  "n_unmatched_candidates": 48,
+  "n_missed_annotated_touches": 1,
+  "contact_candidate_detection": {
+    "tp": 15,
+    "fp": 48,
+    "fn": 1,
+    "precision": 0.23809523809523808,
+    "recall": 0.9375,
+    "f1": 0.37974683544303794
+  },
+  "classification_raw_on_temporal_matches": {
+    "n_temporally_matched": 15,
+    "accuracy_on_temporal_matches": 0.5333333333333333,
+    "n_class_correct": 8,
+    "unchanged_context_fraction_on_matches": 1.0,
+    "accuracy_when_context_unchanged": 0.5333333333333333
+  },
+  "classification_contextual_on_temporal_matches": {
+    "n_temporally_matched": 15,
+    "accuracy_on_temporal_matches": 0.5333333333333333,
+    "n_class_correct": 8,
+    "unchanged_context_fraction_on_matches": 1.0,
+    "accuracy_when_context_unchanged": 0.5333333333333333
+  },
+  "joint_time_and_class_raw": {
+    "tp": 8,
+    "fp": 55,
+    "fn": 8,
+    "precision": 0.12698412698412698,
+    "recall": 0.5,
+    "f1": 0.20253164556962025
+  },
+  "joint_time_and_class_contextual": {
+    "tp": 8,
+    "fp": 55,
+    "fn": 8,
+    "precision": 0.12698412698412698,
+    "recall": 0.5,
+    "f1": 0.20253164556962025
+  },
+  "n_ground_truth_without_match_set_rally_key": 0,
+  "n_ground_truth_without_intersecting_rally_window": 0,
+  "limitations": [
+    "Rally IDs and touch times come from scout for evaluation only.",
+    "The first/last annotated touch plus margin is an evaluation window, not a proven real rally boundary.",
+    "Windows clipped at clip edges have incomplete context; clip edges are not rally starts or ends.",
+    "Predictions outside the union of rally windows are excluded only here; full-clip metrics remain unchanged.",
+    "A candidate in overlapping windows is assigned once to the nearest unpadded rally touch interval; ties use lexical video/set/rally key."
+  ]
+}

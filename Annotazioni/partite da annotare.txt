@@ -1,0 +1,23 @@
+ITA-POL (25-18, 25-17, 25-12)
+
+set1 inizio: 0h07m10s fine: 0h27m57s
+set2 inizio: 0h31m30s fine: 0h57m31s
+set3 inizio: 1h03m05s fine: 1h22m30s
+
+
+
+
+ITA-SRB (26-24, 25-20, 25-20)
+
+set1 inizio: 0h15m50s fine: 0h44m50s
+set2 inizio: 0h48m10s fine: 1h12m10s
+set3 inizio: 1h15m53s fine: 1h39m42s
+
+
+
+
+ITA-DOM (25-19, 24-26, 25-21)
+
+set1 inizio: 0h11m48s fine: 0h35m54s
+set2 inizio: 0h39m32s fine: 1h07m40s
+set3 inizio: 1h11m46s fine: 1h37m15s

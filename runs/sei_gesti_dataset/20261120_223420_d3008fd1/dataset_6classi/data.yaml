@@ -1,0 +1,12 @@
+path: C:\Users\SavarDar\OneDrive - Electrolux\Desktop\Scout_Volley_CV&NLP\runs\sei_gesti_dataset\20261120_223420_d3008fd1\dataset_6classi
+train: train/images
+val: val/images
+test: test/images
+nc: 6
+names:
+- battuta
+- ricezione
+- alzata
+- attacco
+- muro
+- difesa

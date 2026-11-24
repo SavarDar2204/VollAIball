@@ -1,0 +1,59 @@
+{
+  "ground_truth_csv": "C:\\Users\\SavarDar\\OneDrive - Electrolux\\Desktop\\Scout_Volley_CV&NLP\\Annotazioni\\ITA_POL_VNL2024_30fps_FP_palla.csv",
+  "trace_csv": "C:\\Users\\SavarDar\\OneDrive - Electrolux\\Desktop\\Scout_Volley_CV&NLP\\runs\\ball_tracking\\ITA_POL_VNL2024_30fps_20261115_131753\\tracce.csv",
+  "run_config": "C:\\Users\\SavarDar\\OneDrive - Electrolux\\Desktop\\Scout_Volley_CV&NLP\\runs\\ball_tracking\\ITA_POL_VNL2024_30fps_20261115_131753\\configurazione.json",
+  "video": "C:\\Users\\SavarDar\\OneDrive - Electrolux\\Desktop\\Scout_Volley_CV&NLP\\Annotazioni\\ITA_POL_VNL2024_30fps.mp4",
+  "frame_index_mode": "zero_based",
+  "coordinate_mode": "native_pixels",
+  "coordinate_dimensions_px": [
+    1280,
+    720
+  ],
+  "fps": 30.0,
+  "run_interval_seconds": [
+    1150.0,
+    1200.0
+  ],
+  "run_frame_stride": 1,
+  "spatial_tolerance_px": 25.0,
+  "ground_truth_rows_total": 162,
+  "ground_truth_visible_outside_run_or_stride_excluded": 0,
+  "ground_truth_nonvisible_in_run_excluded": 30,
+  "ground_truth_visible_evaluable": 132,
+  "metrics_by_output_type": {
+    "osservata": {
+      "n": 106,
+      "mean_px": 3.8164472977466497,
+      "median_px": 3.3891505178629004,
+      "rmse_px": 4.357927939326794,
+      "within_n": 106,
+      "within_pct": 100.0
+    },
+    "predetta": {
+      "n": 22,
+      "mean_px": 69.73016268051218,
+      "median_px": 11.712489268591948,
+      "rmse_px": 170.35819086109524,
+      "within_n": 16,
+      "within_pct": 72.72727272727273
+    }
+  },
+  "coverage_and_recall": {
+    "visible_gt_frames": 132,
+    "yolo_output_n": 106,
+    "yolo_coverage_pct": 80.3030303030303,
+    "yolo_within_tolerance_n": 106,
+    "yolo_recall_within_tolerance_pct": 80.3030303030303,
+    "kf_output_n": 22,
+    "kf_coverage_pct": 16.666666666666668,
+    "kf_within_tolerance_n": 16,
+    "kf_recall_within_tolerance_pct": 12.121212121212121,
+    "total_output_n": 128,
+    "total_coverage_pct": 96.96969696969697,
+    "total_within_tolerance_n": 122,
+    "total_recall_within_tolerance_pct": 92.42424242424242,
+    "no_output_n": 4,
+    "no_output_pct": 3.0303030303030303
+  },
+  "precision_or_false_positives": "not evaluated: absence is not explicitly certified by this GT"
+}

@@ -1,0 +1,33 @@
+{
+  "video": "C:\\Users\\SavarDar\\OneDrive - Electrolux\\Desktop\\Scout_Volley_CV&NLP\\Annotazioni\\ITA_POL_VNL2024_30fps.mp4",
+  "checkpoint": "C:\\Users\\SavarDar\\OneDrive - Electrolux\\Desktop\\Scout_Volley_CV&NLP\\runs\\volleyball_ball\\yolov8m_ball_20261114_172150\\weights\\best.pt",
+  "checkpoint_run": "yolov8m_ball_20261114_172150",
+  "checkpoint_mtime": "2026-11-14T19:03:34.817263+01:00",
+  "start_seconds": 360,
+  "end_seconds": 4740,
+  "source_fps": 30.0,
+  "frame_stride": 1,
+  "output_fps": 30.0,
+  "processed_frames": 131401,
+  "class_id": 0,
+  "class_name": "ball",
+  "confidence_threshold": 0.765,
+  "nms_iou_threshold": 0.45,
+  "device": "0",
+  "torch": "2.14.1+cu130",
+  "torchvision": "0.29.1+cu130",
+  "tracker": {
+    "max_missed_seconds": 0.75,
+    "max_prediction_seconds": 0.3,
+    "max_prediction_std_px": 30.0,
+    "measurement_std_px": 3.0,
+    "process_jerk_std_px_s3": 3000.0,
+    "initial_velocity_std_px_s": 2200.0,
+    "initial_acceleration_std_px_s2": 1200.0,
+    "gate_mahalanobis_sq": 25
+  },
+  "measurement_covariance_R_px2": 9.0,
+  "single_ball_policy": "highest confidence candidate per sampled frame; incompatible detection resets CA state while retaining ID until timeout",
+  "prediction_stop_policy": "stop PRED after configured horizon, position standard-deviation limit, or leaving image bounds; retain ID until MAX_MISSED_SECONDS; never clamp",
+  "note": "OSS is raw YOLO measurement; PRED is CA-only during missing detections. No hidden-touch detection or 3D ball reconstruction."
+}
